@@ -1,8 +1,5 @@
-export default function Feedback({ feedback, total }) {
+export default function Feedback({ feedback, total, positivePercentage }) {
     
-    const positivePercentage = total > 0 ?
-        Math.round((feedback.good / total) * 100) : 0;
-
     return (
         <div>
             <p>Good: {feedback.good}</p>
